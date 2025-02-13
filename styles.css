@@ -4,6 +4,47 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+    transition: background-color 0.3s, color 0.3s;
+    color: #000000;
+}
+body.dark-theme {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+button:hover:active {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+button:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    width: fit-content;
+}
+
+button {
+    border-right: red;
+    background-color: #333;
+    color: #f4f4f4f4;
+    
+    cursor: pointer;
+    transition: box-shadow 0.4s ease;
+    border-radius: 20px;
+    font-size: 16px;
+    margin: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    width: auto;
+}
+.but{
+    position:absolute;
+    display: flex;
+    width: 1000px;
+    justify-content: flex-end;
+}
+nav{
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    flex-direction: row;
 }
 
 header {
@@ -11,6 +52,51 @@ header {
     color: #fff;
     padding: 1rem 0;
     text-align: center;
+}
+.apropos{
+    margin-left: 50px;
+    background-color: rgb(252, 224, 188);
+    padding: 50px;
+    width: 1395px;
+}
+.row{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.row .col50{
+position: relative;
+width: 48%;
+justify-content: center;
+align-items: center;
+}
+.row .col50 h2{
+    margin-bottom: 20px;
+}
+.titre-text{
+    color: #000;
+    font-size: 2em;
+    font-weight: 300px;
+    text-transform: capitalize;
+}
+.titre-text span{
+    color: #bbb814;
+    font-size: 1.5em;
+    font-weight: 700px;
+}
+.row .col50 img{
+    height: 450px;
+    width: 500px;
+    position: relative;
+    margin-top: -70px;
+}
+.titre{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 nav ul {
@@ -74,6 +160,15 @@ body {
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.5);
 }
+.et{
+    margin-top: -20px;
+    margin-right: -50px;
+    
+}
+.tu{
+    margin-right: 300px;
+    background-color: rgb(252, 224, 188);
+}
 .hero-content {
     position: relative;
     z-index: 1;
@@ -98,4 +193,22 @@ body {
 .hero button:hover {
     background-color: #0056b3;
 }
-
+/*groupe 5*/
+ .r img{
+    width: 200px;
+    height: 200px;
+    transition: 0.5s;
+    border-radius: 30px;
+}
+.r img:hover{
+    transform: scale(1.2);
+    color: #333;
+}
+.r{
+    width: 300px;
+    display: flex;
+    
+}
+.r div{
+    margin: 20px;
+}
